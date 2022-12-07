@@ -1,0 +1,6 @@
+{
+    "directory_name": "example_basic",
+    "readme_title": "Example Application",
+    "python_main_module": "__main__.py",
+    "python_local_package": "custom_widgets"
+}

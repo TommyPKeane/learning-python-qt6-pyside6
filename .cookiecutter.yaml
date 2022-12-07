@@ -1,0 +1,6 @@
+default_context:
+    full_name: "Tommy P. Keane"
+    email: "talk.to.tommypkeane@gmail.com"
+    github_username: "tommypkeane"
+cookiecutters_dir: "./"
+replay_dir: "/home/audreyr/my-custom-replay-dir/"

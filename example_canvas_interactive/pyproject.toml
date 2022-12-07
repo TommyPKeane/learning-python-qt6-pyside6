@@ -1,0 +1,298 @@
+[tool.poetry]
+name = "example_canvas_interactive"
+version = "1.0.0"
+description = "Example of pyside6 App"
+authors = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+maintainers = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+homepage = "https://www.tommypkeane.com"
+repository = "https://github.com/TommyPKeane/qt6-pyside6-examples"
+license = "MIT"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pyside6 = "^6.4.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pylint = "^2.15.5"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.main]
+# analyse-fallback-blocks =
+# exit-zero =
+# extension-pkg-allow-list =
+# extension-pkg-whitelist =
+# fail-on =
+fail-under = 10
+# from-stdin =
+ignore = [
+    ".direnv",
+    ".git",
+]
+# ignore-paths =
+ignore-patterns = [
+    "^\\.#",
+]
+# ignored-modules =
+# init-hook =
+jobs = 1
+limit-inference-results = 100
+# load-plugins =
+persistent = true
+py-version = "3.10"
+# recursive =
+suggestion-mode = true
+# unsafe-load-any-extension =
+
+[tool.pylint.basic]
+argument-naming-style = "snake_case"
+# argument-rgx =
+attr-naming-style = "snake_case"
+# attr-rgx =
+bad-names = [
+    "foo",
+    "bar",
+    "baz",
+    "toto",
+    "tutu",
+    "tata",
+]
+# bad-names-rgxs =
+class-attribute-naming-style = "any"
+# class-attribute-rgx =
+class-const-naming-style = "UPPER_CASE"
+# class-const-rgx =
+class-naming-style = "PascalCase"
+# class-rgx =
+const-naming-style = "UPPER_CASE"
+# const-rgx =
+docstring-min-length = -1
+function-naming-style = "snake_case"
+# function-rgx =
+good-names = [
+    "i",
+    "j",
+    "k",
+    "ex",
+    "Run",
+    "_",
+]
+# good-names-rgxs =
+# include-naming-hint =
+inlinevar-naming-style = "any"
+# inlinevar-rgx =
+method-naming-style = "snake_case"
+# method-rgx =
+module-naming-style = "snake_case"
+# module-rgx =
+# name-group =
+no-docstring-rgx = "^_"
+property-classes = [
+    "abc.abstractproperty",
+]
+# typevar-rgx =
+variable-naming-style = "snake_case"
+# variable-rgx =
+
+[tool.pylint.classes]
+# check-protected-access-in-special-methods =
+defining-attr-methods = [
+    "__init__",
+    "__new__",
+    "setUp",
+    "__post_init__",
+]
+exclude-protected = [
+    "_asdict",
+    "_fields",
+    "_replace",
+    "_source",
+    "_make",
+]
+valid-classmethod-first-arg = [
+    "cls",
+]
+valid-metaclass-classmethod-first-arg = [
+    "cls",
+]
+
+[tool.pylint.design]
+# exclude-too-few-public-methods =
+# ignored-parents =
+max-args = 5
+max-attributes = 7
+max-bool-expr = 5
+max-branches = 12
+max-locals = 15
+max-parents = 7
+max-public-methods = 20
+max-returns = 6
+max-statements = 50
+min-public-methods = 2
+
+[tool.pylint.exceptions]
+overgeneral-exceptions = [
+    "BaseException",
+    "Exception",
+]
+
+[tool.pylint.format]
+# expected-line-ending-format =
+ignore-long-lines = "^\\s*(# )?<?https?://\\S+>?$"
+indent-after-paren = 4
+indent-string = "    "
+max-line-length = 100
+max-module-lines = 1000
+# single-line-class-stmt =
+# single-line-if-stmt =
+
+[tool.pylint.imports]
+# allow-any-import-level =
+# allow-wildcard-with-all =
+# deprecated-modules =
+# ext-import-graph =
+# import-graph =
+# int-import-graph =
+# known-standard-library =
+known-third-party = [
+    "enchant",
+]
+# preferred-modules =
+
+[tool.pylint.logging]
+logging-format-style = "new"
+logging-modules = [
+    "logging",
+]
+
+[tool.pylint."messages control"]
+confidence = [
+    "HIGH",
+    "CONTROL_FLOW",
+    "INFERENCE",
+    "INFERENCE_FAILURE",
+    "UNDEFINED",
+]
+disable = [
+    "bad-inline-option",
+    "deprecated-pragma",
+    "file-ignored",
+    "locally-disabled",
+    "logging-fstring-interpolation",
+    "raw-checker-failed",
+    "similarities",
+    "suppressed-message",
+    "use-symbolic-message-instead",
+    "useless-suppression",
+    "useless-return",
+]
+enable = [
+    "c-extension-no-member",
+]
+
+[tool.pylint.method_args]
+timeout-methods = [
+    "requests.api.delete",
+    "requests.api.get",
+    "requests.api.head",
+    "requests.api.options",
+    "requests.api.patch",
+    "requests.api.post",
+    "requests.api.put",
+    "requests.api.request",
+]
+
+[tool.pylint.miscellaneous]
+notes = [
+    "FIXME",
+    "XXX",
+    "TODO",
+]
+# notes-rgx =
+
+[tool.pylint.refactoring]
+max-nested-blocks = 5
+never-returning-functions = [
+    "sys.exit",
+    "argparse.parse_error",
+]
+
+[tool.pylint.reports]
+evaluation = "max(0, 0 if fatal else 10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10))"
+# msg-template =
+# output-format =
+# reports =
+score = true
+
+[tool.pylint.similarities]
+ignore-comments = true
+ignore-docstrings = true
+ignore-imports = true
+ignore-signatures = true
+min-similarity-lines = 4
+
+[tool.pylint.spelling]
+max-spelling-suggestions = 4
+# spelling-dict =
+spelling-ignore-comment-directives = "fmt: on,fmt: off,noqa:,noqa,nosec,isort:skip,mypy:"
+# spelling-ignore-words =
+# spelling-private-dict-file =
+# spelling-store-unknown-words =
+
+[tool.pylint.string]
+# check-quote-consistency =
+# check-str-concat-over-line-jumps =
+
+[tool.pylint.typecheck]
+contextmanager-decorators = [
+    "contextlib.contextmanager",
+]
+# generated-members =
+ignore-none = true
+ignore-on-opaque-inference = true
+ignored-checks-for-mixins = [
+    "no-member",
+    "not-async-context-manager",
+    "not-context-manager",
+    "attribute-defined-outside-init",
+]
+ignored-classes = [
+    "optparse.Values",
+    "thread._local",
+    "_thread._local",
+    "argparse.Namespace",
+]
+missing-member-hint = true
+missing-member-hint-distance = 1
+missing-member-max-choices = 1
+mixin-class-rgx = ".*[Mm]ixin"
+# signature-mutators =
+
+[tool.pylint.variables]
+# additional-builtins =
+allow-global-unused-variables = true
+# allowed-redefined-builtins =
+callbacks = [
+    "cb_",
+    "_cb",
+]
+dummy-variables-rgx = "_+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy|^ignored_|^unused_"
+ignored-argument-names = "_.*|^ignored_|^unused_"
+# init-import =
+redefining-builtins-modules = [
+    "six.moves",
+    "past.builtins",
+    "future.builtins",
+    "builtins",
+    "io",
+]

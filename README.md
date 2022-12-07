@@ -19,7 +19,7 @@ This is an example/tutorial repository of Open-Source (GPL) Qt Applications usin
 1. `pip install poetry`
 1. `poetry install`
 
-For each example, it is not necessary that you have `qmake` in your `PATH` in order to install `pyside6`, but if you want to use all of the `Qt6` features and create a built/exported application, you made need to download and install the `Qt6` open-source installer.
+For each example, it is not necessary that you have `qmake` in your `PATH` in order to install `pyside6`, but if you want to use all of the `Qt6` features and create a built/exported application, you may need to download and install the `Qt6` open-source installer.
 
 The Qt Installer -- [`https://www.qt.io/download-open-source`](https://www.qt.io/download-open-source) -- should be downloaded and run before doing any of the above.
 

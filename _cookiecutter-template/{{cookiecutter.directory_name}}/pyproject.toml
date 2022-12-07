@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "example_basic"
+name = "{{cookiecutter.directory_name}}"
 version = "1.0.0"
 description = "Example of pyside6 App"
 authors = [
-    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+    "{{cookiecutter.full_name}} <{{cookiecutter.email}}>",
 ]
 maintainers = [
-    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+    "{{cookiecutter.full_name}} <{{cookiecutter.email}}>",
 ]
 homepage = "https://www.tommypkeane.com"
 repository = "https://github.com/TommyPKeane/qt6-pyside6-examples"

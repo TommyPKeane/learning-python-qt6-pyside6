@@ -2,5 +2,7 @@
     "directory_name": "example_basic",
     "readme_title": "Example Application",
     "python_main_module": "__main__.py",
-    "python_local_package": "custom_widgets"
+    "python_local_package": "custom_widgets",
+    "full_name": "Tommy P. Keane",
+    "email": "talk.to.tommypkeane@gmail.com"
 }

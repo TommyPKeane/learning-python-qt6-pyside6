@@ -1,4 +1,4 @@
-# {{readme_title}}
+# {{cookiecutter.readme_title}}
 
 This is an example/tutorial repository of Open-Source (GPL) Qt Applications using `pyside6` and Python on top of `Qt6`, which retains the GPLv2 Licensing (see the [`LICENSE`](./LICENSE) file).
 

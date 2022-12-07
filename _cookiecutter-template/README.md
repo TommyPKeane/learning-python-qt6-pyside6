@@ -11,9 +11,7 @@ This is an example/tutorial repository of Open-Source (GPL) Qt Applications usin
 
 ## Developer Setup
 
-It is expected that `qmake` is on your path, in order to install `pyside6`, which is a common dependency in every example.
-
-The Qt Installer -- [`https://www.qt.io/download-open-source`](https://www.qt.io/download-open-source) -- should be downloaded and run before doing any of the above.
+With `pyside6`, there's not necessarily a need to install the Qt core or any other libraries separately, unless you are trying to export an application for mobile devices or other platforms.
 
 1. `direnv allow`
 1. `pip install --upgrade pip`
